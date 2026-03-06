@@ -23,8 +23,14 @@
       },
       "predictiveBackGestureEnabled": false
     },
+    "scheme": "green-thumb",
     "web": {
+      "bundler": "metro",
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router",
+      "expo-font"
+    ]
   }
 }
