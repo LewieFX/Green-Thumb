@@ -9,7 +9,9 @@
     "ios": "node scripts/generate-image-map.js && expo start --ios",
     "web": "node scripts/generate-image-map.js && expo start --web",
     "images": "node scripts/generate-image-map.js",
-    "build:web": "node scripts/generate-image-map.js && npx expo export --platform web"
+    "build:web": "node scripts/generate-image-map.js && npx expo export --platform web",
+    "deploy": "npx expo export -p web && wrangler deploy",
+    "preview": "npx expo export -p web && wrangler dev"
   },
   "dependencies": {
     "@expo-google-fonts/delius": "^0.4.1",
@@ -37,7 +39,8 @@
   },
   "devDependencies": {
     "@types/react": "~19.2.2",
-    "typescript": "~5.9.2"
+    "typescript": "~5.9.2",
+    "wrangler": "^4.71.0"
   },
   "private": true
 }
